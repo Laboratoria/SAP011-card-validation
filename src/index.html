@@ -1,14 +1,45 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
+<head>
+    <meta charset='utf-8'>
     <title>Tarjeta de crédito válida</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <header></header>
-    <main></main>
-    <footer></footer>
+    <link rel='stylesheet' href='style.css'>
+</head>
+<body>
+    <main>
+        <form id="register-form">
+            <div id="full-box">
+                <header>
+                    <h2>Valide cartões de crédito aqui!</h2>
+                    <br>
+                    <p><strong>1º Passo:</strong> Você vai precisar do número de identificação do cartão a validar (localizado na parte da frente) para realizar a consulta.</p>
+                    <br>
+                    <p><strong>2º Passo:</strong> Em seguida, preencha o campo abaixo com o número de identificação para verificar se o cartão é válido.</p>
+                    <br>
+                    <p><strong>3º Passo:</strong> Após preencher, verifique se os quatro últimos dígitos do cartão estão corretos e clique no botão "Verificar".</p>
+                    <br>
+                </header>
+                <div class="box spacing">
+                    <label>Número de identificação do cartão:</label>
+                    <br>
+                    <input type="number" name="cardnumber" id="card" placeholder="Digite o número do cartão">
+                    <input type="submit" id="btn-submit" value="Verificar">
+                </div>
+            </div>
+        </form>
+    </main>
+    <footer class="foot">
+        <h4>Informações adicionais.</h4>
+        <nav>
+          <ul>
+              <li><strong>Aluna:</strong> <q>Leticia Bezerra (Leth).</q><cite><a href=" https://www.linkedin.com/in/leticia-bezerra-03884a209/ ">Linkedin</a></cite></li>
+              <li><strong>Squad:</strong> 01 <strong>Turma:</strong> SP011 da <a href=" https://www.laboratoria.la/br ">Laboratória.</a></li>
+              <li><strong>Projeto:</strong> <q>Repositorio -</q><cite><a href=" https://github.com/leticia-bezerra/SAP011-card-validation ">GitHub</a></cite></li>
+          </ul>
+          <p>Terminado em (em aberto)</p>
+          <br>
+        </nav>
+    </footer>
     <script src="index.js" type="module"></script>
-  </body>
+</body>
 </html>

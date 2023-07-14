@@ -1,0 +1,124 @@
+/* Geral */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Helvetica, sans-serif;
+    color: black;
+    border: none;
+}
+
+input,
+label {
+    display: block;
+    width: 100%;
+}
+
+input:focus,
+label:focus {
+    outline: none;
+}
+
+a {
+    color: #E60084;
+}
+
+body {
+    padding-top: 10vh;  /* view height -> 5% da tela */
+    background-image: url('../img/bg-register-page1.jpg');
+    background-position-y: -100px;
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    flex-grow: 1;
+}
+
+/* Formulário */
+#full-box {
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 25px;
+}
+
+#full-box h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 1.6rem; /* fonte adaptada ao elemento root */
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.box {
+    flex: 1 1 100%;
+    position: relative;
+}
+
+.spacing {
+    margin-right: 2.5%;
+}
+
+label {
+    font-weight: bold;
+    font-size: .8rem;
+}
+
+input {
+    border-bottom: 2px solid #323232;
+    padding: 10px;
+    font-size: .9rem;
+    margin-bottom: 60px;
+}
+
+input:focus {
+    border-color: blue;
+}
+
+input[type="submit"] {
+    background-color: darkgreen;
+    color: #fff;
+    border: none;
+    border-radius: 40px;
+    cursor: pointer; /* permite detectar o mouse passando */
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    margin-top: auto;
+}
+
+#foot h4 {
+    margin-bottom: 25px;
+    font-size: 1.6rem;
+}
+
+#foot p,
+#foot ul {
+    margin-bottom: 25px;
+    font-size: 1.2rem;
+    font-family: Helvetica, sans-serif;
+    color: darkgoldenrod;
+}
+
+/* bibliografia de apoio:
+https://www.google.com/search?q=como+criar+uma+tela+de+consulta+de+cartao+de+credito+em+html&hl=en&sxsrf=AB5stBjrf6yB6hrZmLWNgYNsobX3h4RK0g%3A1689280845345&ei=TWGwZNvYFJTl1sQPvJSNwAk&ved=0ahUKEwibs9nFxYyAAxWUspUCHTxKA5gQ4dUDCBA&uact=5&oq=como+criar+uma+tela+de+consulta+de+cartao+de+credito+em+html&gs_lp=Egxnd3Mtd2l6LXNlcnAiPGNvbW8gY3JpYXIgdW1hIHRlbGEgZGUgY29uc3VsdGEgZGUgY2FydGFvIGRlIGNyZWRpdG8gZW0gaHRtbEiyjgFQAFiAigFwBXgBkAEAmAHgAqABgkKqAQgwLjU4LjEuMbgBA8gBAPgBAagCFMICBxAjGOoCGCfCAhAQLhiKBRjqAhi0AhhD2AEBwgIQEAAYigUY6gIYtAIYQ9gBAcICBBAjGCfCAgcQLhiKBRhDwgIHEAAYigUYQ8ICCxAuGIAEGMcBGNEDwgIFEAAYgATCAgUQLhiABMICDRAuGIoFGMcBGNEDGEPCAggQABiABBjLAcICCBAAGIoFGIYDwgIFECEYoAHCAggQIRgWGB4YHcICBBAhGBXCAgYQABgWGB7CAgcQIRigARgKwgIEECEYCuIDBBgAIEGIBgG6BgYIARABGAE&sclient=gws-wiz-serp#fpstate=ive&vld=cid:fce9e35b,vid:hXUQpiW9Tho 
+
+
+https://pt.stackoverflow.com/questions/194041/como-deixar-meu-footer-sempre-embaixo
+*/
