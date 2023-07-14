@@ -1,12 +1,30 @@
-import validator from './validator.js';
+    import validator from './validator.js';
 
-console.log(validator);
+    console.log(validator);
 
-let submit = document.getElementById("btn-submit");
+    // register-form
 
-submit.addEventListener('click', function(e) {
+    let form = document.getElementById("register-form");
+                form.querySelector(`[id=${placeholder}]`).innerHTML
 
-    e.preventDefault();
+    submit.addEventListener('click', function(e) {
+        e.preventDefault();
 
-    console.log("funcionou!");
-} )
+        console.log("funcionou!");
+    }
+    
+    )
+
+
+    let submit = document.getElementById("btn-submit");
+
+    submit.addEventListener('click', function(e) {
+        e.preventDefault();
+
+        if {
+            console.log("funcionou!");
+
+        }
+        }
+    )
+

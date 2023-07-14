@@ -1,48 +1,49 @@
 /* Geral */
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: Helvetica, sans-serif;
-    color:#323232
+    color: black;
     border: none;
 }
 
-input, label {
+input,
+label {
     display: block;
     width: 100%;
 }
 
-Input:focus, label:focus {
+input:focus,
+label:focus {
     outline: none;
 }
 
 a {
-    color:#E60084
+    color: #E60084;
 }
 
-Body {
-     Padding-top: 10vh;  /* view height -> 5% da tela*/
-     background-image: url('../img/bg-register-page1.jpg');
-     background-position-y: -100px;
-     height: 100%;
-     margin: 0;
-     display: flex;
-     flex-direction: column;
-     
+body {
+    padding-top: 10vh;  /* view height -> 5% da tela */
+    background-image: url('../img/bg-register-page1.jpg');
+    background-position-y: -100px;
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
 }
 
 html {
     height: 100%;
     margin: 0;
     padding: 0;
-  }
+}
 
-  main {
+main {
     flex-grow: 1;
-  }
+}
 
-/* form */
+/* Formulário */
 #full-box {
     width: 500px;
     margin-left: auto;
@@ -52,7 +53,7 @@ html {
     padding: 25px;
 }
 
-#full-box H2 {
+#full-box h2 {
     text-align: center;
     margin-bottom: 25px;
     font-size: 1.6rem; /* fonte adaptada ao elemento root */
@@ -72,7 +73,7 @@ form {
     margin-right: 2.5%;
 }
 
-label{
+label {
     font-weight: bold;
     font-size: .8rem;
 }
@@ -85,44 +86,35 @@ input {
 }
 
 input:focus {
-    border-color:blue;
+    border-color: blue;
 }
 
-    input[type="submit"]{
-        background-color:darkgreen;
-        color:#fff;
-        border: none;
-        border-radius: 40px;
-        cursor: pointer; /* perce o mouse passando*/
-    }
+input[type="submit"] {
+    background-color: darkgreen;
+    color: #fff;
+    border: none;
+    border-radius: 40px;
+    cursor: pointer; /* permite detectar o mouse passando */
+}
 
-    html {
-        height: 100%;
-        min-height: 100%;
-    }
+footer {
+    display: flex;
+    flex-direction: column;
+    margin-top: auto;
+}
 
-    footer {
-        display: flex;
-        flex-direction: column;
-        margin-top: auto;
-    }
+#foot h4 {
+    margin-bottom: 25px;
+    font-size: 1.6rem;
+}
 
-    #foot H4 {
-        margin-bottom: 25px;
-        font-size: 1.6rem;
-        
-    }
-
-    #foot p, ul {
-        margin-bottom: 25px;
-        font-size: 1.2rem;
-        font-family: Helvetica, sans-serif;
-        color: darkgoldenrod;
-    }
-
-
-
-
+#foot p,
+#foot ul {
+    margin-bottom: 25px;
+    font-size: 1.2rem;
+    font-family: Helvetica, sans-serif;
+    color: darkgoldenrod;
+}
 
 /* bibliografia de apoio:
 https://www.google.com/search?q=como+criar+uma+tela+de+consulta+de+cartao+de+credito+em+html&hl=en&sxsrf=AB5stBjrf6yB6hrZmLWNgYNsobX3h4RK0g%3A1689280845345&ei=TWGwZNvYFJTl1sQPvJSNwAk&ved=0ahUKEwibs9nFxYyAAxWUspUCHTxKA5gQ4dUDCBA&uact=5&oq=como+criar+uma+tela+de+consulta+de+cartao+de+credito+em+html&gs_lp=Egxnd3Mtd2l6LXNlcnAiPGNvbW8gY3JpYXIgdW1hIHRlbGEgZGUgY29uc3VsdGEgZGUgY2FydGFvIGRlIGNyZWRpdG8gZW0gaHRtbEiyjgFQAFiAigFwBXgBkAEAmAHgAqABgkKqAQgwLjU4LjEuMbgBA8gBAPgBAagCFMICBxAjGOoCGCfCAhAQLhiKBRjqAhi0AhhD2AEBwgIQEAAYigUY6gIYtAIYQ9gBAcICBBAjGCfCAgcQLhiKBRhDwgIHEAAYigUYQ8ICCxAuGIAEGMcBGNEDwgIFEAAYgATCAgUQLhiABMICDRAuGIoFGMcBGNEDGEPCAggQABiABBjLAcICCBAAGIoFGIYDwgIFECEYoAHCAggQIRgWGB4YHcICBBAhGBXCAgYQABgWGB7CAgcQIRigARgKwgIEECEYCuIDBBgAIEGIBgG6BgYIARABGAE&sclient=gws-wiz-serp#fpstate=ive&vld=cid:fce9e35b,vid:hXUQpiW9Tho 
