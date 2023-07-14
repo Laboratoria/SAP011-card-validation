@@ -16,15 +16,15 @@
     )
 
 
-    let submit = document.getElementById("btn-submit");
+    // let submit = document.getElementById("btn-submit");
 
-    submit.addEventListener('click', function(e) {
-        e.preventDefault();
+    // submit.addEventListener('click', function(e) {
+    //     e.preventDefault();
 
-        if {
-            console.log("funcionou!");
+    //     if {
+    //         console.log("funcionou!");
 
-        }
-        }
-    )
+    //     }
+    //     }
+    // )
 
