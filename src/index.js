@@ -1,21 +1,25 @@
-    import validator from './validator.js';
+        import validator from './validator.js';
 
-    console.log(validator);
+        console.log(validator);
 
-    // let numero = document.getElementById("card").value;
-    let submit = document.getElementById("btn-submit");
+        // let numero = document.getElementById("card").value;
+        let submit = document.getElementById("btn-submit");
 
-        submit.addEventListener('click', function(e) {
-        e.preventDefault();
+            submit.addEventListener('click', function(e) {
+            e.preventDefault();
 
-        const cartao = document.querySelector("cardnumber").value;
-        // const value = cartao.value;
+            // const cartao = document.querySelector('.class=box spacing');
+            const valor = document.querySelector('#card').value;
+            //estudar mais seletores
 
-        console.log(cartao);
+            console.log(valor);
+
+            // function {
+
+            // }
 
 
-    }
-    )
+        });
 
 
     // let submit = document.getElementById("btn-submit");
