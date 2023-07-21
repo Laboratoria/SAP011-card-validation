@@ -2,17 +2,19 @@
 
     console.log(validator);
 
-    // register-form
+    // let numero = document.getElementById("card").value;
+    let submit = document.getElementById("btn-submit");
 
-    let form = document.getElementById("register-form");
-                form.querySelector(`[id=${placeholder}]`).innerHTML
-
-    submit.addEventListener('click', function(e) {
+        submit.addEventListener('click', function(e) {
         e.preventDefault();
 
-        console.log("funcionou!");
+        const cartao = document.querySelector("cardnumber").value;
+        // const value = cartao.value;
+
+        console.log(cartao);
+
+
     }
-    
     )
 
 
