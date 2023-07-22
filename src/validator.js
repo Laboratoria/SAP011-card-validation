@@ -1,11 +1,15 @@
 const validator = {
-  //criar o bloco para validar
-  
-  //pegar o valor 
+  isValid,
+  // var numero = document.querySelector("#card");
 
-  //fazer a formula
-  //valor/2 resto tem que ser zero
-  //valor /2 resto diferente de zero
+  // console.log(numero);
+
+  
 };
+
+function isValid(card) {
+  console.log(card);
+
+}
 
 export default validator;
