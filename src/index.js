@@ -4,27 +4,25 @@ console.log(validator);
 
 const submit = document.getElementById("btn-submit");
 
-
 submit.addEventListener('click', function (e) {
   e.preventDefault();
-
   // const cartao = document.querySelector('.class=box spacing');
   const valor = document.querySelector('#card').value;
   //estudar mais seletores
-  console.log(valor);
+  const isValid = validator.isValid(valor);
+  if(isValid) {
+    document.getElementById("register-form").innerHTML = `
+                    <header>
+                        <h2>Cartao validado com sucesso!</h2>
+                        <br>
+                    </header>
+                        <br>
+                        <input type="submit" id="btn-submit" value="Validar novamente">`
+  } else {
 
-
-
+    alert("Por gentileza, verifique o numero informado e tente novamente.");
+  }
 
 });
 
-
-// let submit = document.getElementById("btn-submit");
-// submit.addEventListener('click', function(e) {
-//     e.preventDefault();
-//     if {
-//         console.log("funcionou!");
-//     }
-//     }
-// )
 

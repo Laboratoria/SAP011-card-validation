@@ -4,7 +4,7 @@ const validator = {
 
   // console.log(numero);
 
-  
+
 };
 
 function isValid(card) {
@@ -13,3 +13,19 @@ function isValid(card) {
 }
 
 export default validator;
+
+// function maskify(str) {
+//   if (str.length <= 12) {
+//     return str;
+//   }
+
+//   const lastFourCard = str.substr(-12);
+
+//   const maskedChars = '*'.repeat(str.length - 12);
+
+//   const maskedString = maskedChars + lastFourCard;
+
+//   return maskedString;
+
+
+// }
