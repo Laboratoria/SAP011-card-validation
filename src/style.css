@@ -1,0 +1,78 @@
+html {
+    margin:auto;
+    background-color: rgb(9, 9, 67);
+    font-size: 20px; 
+    font-family: "Open Sans", sans-serif
+
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: "open sans", sans-serif;
+      background-color: rgb(9,9,67);
+      font-size: 20px;      
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+      .form-container, .container {
+      width: 300px;
+      padding: 10px 20px 20px 20px;
+      background-color: #53a8d2;
+      border: 2px solid black;
+      border-radius: 20px;
+    }
+
+      h2 { 
+        color: antiquewhite;
+        text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+
+      }
+      input [type = "submit"] {
+        width: auto;
+        margin: auto;
+        font-size: 25px;
+        color: rgb(255, 255, 255);
+        background-color: #d95ae8;
+        padding: 7px 15px 7px 15px;
+        border: 2px solid black;
+        border-radius: 20px;
+      }
+
+      input[type=text] {
+        border-radius: 4px;
+        -moz-border-radius: 4px;
+        -webkit-border-radius: 4px;
+        box-shadow: 1px 1px 2px #333333;
+        -moz-box-shadow: 1px 1px 2px #333333;
+        -webkit-box-shadow: 1px 1px 2px #333333;
+        background: #cccccc;
+        border: 1px solid #000000;
+        width: 150px
+    }
+    
+    textarea {
+        border: 1px solid #000000;
+        background: #cccccc;
+        width: 150px;
+        height: 100px;
+        border-radius: 4px;
+        -moz-border-radius: 4px;
+        -webkit-border-radius: 4px;
+        box-shadow: 1px 1px 2px #333333;
+        -moz-box-shadow: 1px 1px 2px #333333;
+        -webkit-box-shadow: 1px 1px 2px #333333;
+    }
+    
+    input[type=text]:hover,
+    textarea:hover {
+        background: #ffffff;
+        border: 1px solid #990000;
+    }
+    
+    input[type=submit] {
+        background: #006699;
+        color: #ffffff;
+    }
