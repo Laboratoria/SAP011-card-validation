@@ -7,8 +7,10 @@ const validator = {
 
 };
 
-function isValid(card) {
-  console.log(card);
+function isValid(valor) {
+  const card = document.querySelector('#card').value;
+  console.log(card)
+
 
 }
 

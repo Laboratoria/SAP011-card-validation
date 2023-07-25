@@ -6,9 +6,6 @@ const submit = document.getElementById("btn-submit");
 
 submit.addEventListener('click', function (e) {
   e.preventDefault();
-  // const cartao = document.querySelector('.class=box spacing');
-  const valor = document.querySelector('#card').value;
-  //estudar mais seletores
   const isValid = validator.isValid(valor);
   if(isValid) {
     document.getElementById("register-form").innerHTML = `
