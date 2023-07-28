@@ -1,13 +1,14 @@
 import validator from './validator.js';
 
-console.log(validator);
-
 const submit = document.getElementById("btn-submit");
+
+const numero = document.getElementById("card").value;
 
 submit.addEventListener('click', function (e) {
   e.preventDefault();
-  const isValid = validator.isValid(valor);
-  if(isValid) {
+
+  
+  if(validator.isValid(numero)) {
     document.getElementById("register-form").innerHTML = `
                     <header>
                         <h2>Cartao validado com sucesso!</h2>
