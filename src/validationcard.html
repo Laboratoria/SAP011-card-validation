@@ -2,62 +2,63 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Validação - Moon Express</title>
-    <script src="index.js" type="module"></script>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Validação - Moon Express</title>
+  <script src="index.js" type="module"></script>
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <header>
-        <nav class="links">
-          <ul>
-            <li><a href="index.html">Início</a></li>
-            <li><a href="validationcard.html">Validar Cartão</a></li>
-            <li><a href="about.html">Quem Somos</a></li>
-          </ul>
-        </nav>
-      </header>
-    
-    <form class="form-container">
-        <label for="numeroCartao">
-            <h2> Valide seu cartão</h2>
-        </label>
-        
-        <p>Você está a um passo de pisar na lua, mas antes, valide seu cartão. 
-        <br> Ele será necessário somente aqui na terra.</p>
-        <br>
-        <input type="text" id="numeroCartao" maxlength="16" placeholder="Digite o número do cartão" required>
-        <div>
-            <label for="nomeCompleto"></label>
-            <br>
-            <input type="text" id="nomeCompleto" placeholder="Insira seu nome">
-            </div>
-            <div>
-              <br> 
-              <label for="validadeCartao">Validade do cartão</label>
-              <input type="month" id="validadeCartao" name = "validadeCartao">
-              <p class="data">Mês/ano</p>
-              <button type="submit">Validar</button>
-        </div> 
-        <div class="alert" id="alert"></div>
-        <div class="invalid-options" id="invalidOptions">
-          <button onclick="tentarNovamente()"class="tryAgain">Tentar novamente</button>
-          <button>
-            <a href="moon.html" class="validError">Não tenho cartão válido</a>
-          </button>
-        </div>
-      </form>
-        
-    </body>
-      
+  <header>
+    <nav class="links">
+      <ul>
+        <li><a href="index.html">Início</a></li>
+        <li><a href="validationcard.html">Validar Cartão</a></li>
+        <li><a href="about.html">Quem Somos</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <form class="form-container">
+    <label for="numeroCartao">
+      <h2> Valide seu cartão</h2>
+    </label>
+
+    <p>Você está a um passo de pisar na lua, mas antes, valide seu cartão.
+      <br> Ele será necessário somente aqui na terra.
+    </p>
+    <br>
+    <input type="text" id="numeroCartao" maxlength="16" placeholder="Digite o número do cartão" required>
+    <div>
+      <label for="nomeCompleto"></label>
+      <br>
+      <input type="text" id="nomeCompleto" placeholder="Insira seu nome">
+    </div>
+    <div>
+      <br>
+      <label for="validadeCartao">Validade do cartão</label>
+      <input type="month" id="validadeCartao" name="validadeCartao">
+      <p class="data">Mês/ano</p>
+      <button type="submit">Validar</button>
+    </div>
+    <div class="alert" id="alert"></div>
+    <div class="invalid-options" id="invalidOptions">
+      <button onclick="tentarNovamente()" class="tryAgain">Tentar novamente</button>
+      <button>
+        <a href="moon.html" class="validError">Não tenho cartão válido</a>
+      </button>
+    </div>
+  </form>
+
+</body>
+
 <footer>
-    <p class="copy">Todos os direitos reservados &copy; Moon Express</p>
-    <div class="links-footer">
-      <a href="https://www.linkedin.com/in/karina-pedra-072aa9284/" target="_blank">LinkedIn</a>
-      <a href="https://www.github.com/2karina" target="_blank">GitHub</a>
+  <p class="copy">Todos os direitos reservados &copy; Moon Express</p>
+  <div class="links-footer">
+    <a href="https://www.linkedin.com/in/karina-pedra-072aa9284/" target="_blank">LinkedIn</a>
+    <a href="https://www.github.com/2karina" target="_blank">GitHub</a>
   </div>
 </footer>
 

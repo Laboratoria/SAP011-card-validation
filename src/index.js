@@ -38,18 +38,5 @@ function validarCartao(event) {
   setTimeout(() => {
     alertElement.style.display = 'none';
   }, 5000);
-  }
-  function tentarNovamente() {
-       console.log('Tentando novamente...');
-  }
-  
-  function assistirVideo() {
-       window.location.href = '/moon.mp4';
-  }
-
-
-alertElement.style.display = 'block';
-setTimeout(() => {
-  alertElement.style.display = 'none';
-}, 5000);
+}
 
