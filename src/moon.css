@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+
+.msg1 {
+    margin-top: 200px !important;
+}
+
+.msg {
+    font-family: "Special Elite", monospace;
+    margin-top: 30px;
+    margin-left: 300px;
+    padding-left: 40px;
+    display: flex;
+    font-size: 1.5rem;
+    font-weight: 700;
+    width: 35ch;
+    overflow: hidden;
+    color: rgb(233, 227, 227);
+    text-align: center;
+    white-space: nowrap;
+    box-shadow: 1rem 0 0 #a7a47c;
+    opacity: 0;
+    animation-fill-mode: forwards;
+}
+
+.moon {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+
+.msg1 {
+    width: 0;
+    animation: msg1-anim 3s steps(22, end) 0s forwards, mark-anim 0.5s alternate infinite 0s;
+}
+
+.msg2 {
+    width: 0;
+    animation: msg2-anim 3s steps(22, end) 3s forwards, mark-anim 0.5s alternate infinite 3s;
+}
+
+.msg3 {
+    width: 0;
+    animation: msg3-anim 3s steps(22, end) 6s forwards, mark-anim 0.5s alternate infinite 3s;
+}
+
+@keyframes msg1-anim {
+    0% {
+
+        width: 0;
+        opacity: 0;
+    }
+
+    100% {
+        width: 47ch;
+        opacity: 1;
+    }
+}
+
+@keyframes msg2-anim {
+    0% {
+        width: 0;
+        opacity: 0;
+    }
+
+    100% {
+        width: 57ch;
+        opacity: 1;
+    }
+}
+
+@keyframes msg3-anim {
+    0% {
+        width: 0;
+        opacity: 0;
+    }
+
+    100% {
+        width: 59ch;
+        opacity: 1;
+
+    }
+
+
+}
+
+@keyframes mark-anim {
+    50% {
+        box-shadow: 1rem 0 0 transparent;
+    }
+}
+
+@keyframes show-video {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moon Express</title>
+    <link rel="stylesheet" href="moon.css">
+</head>
+
+<body>
+    <!--<span class="msg msg1">- Parece que o cartão foi negado.</span>
+    <br>-->
+    <span class="msg msg1">- É, pelo visto teremos te levar de volta...</span>
+    <br>
+    <span class="msg msg2">- Você não terá como pagar a passagem de retorno, né?</span>
+    <br>
+    <span class="msg msg3">- Bem, verei com o meu comandante o que podemos fazer...</span>
+    <video class="moon" src="moon.mp4" controls autoplay></video>
+    <script>
+
+        document.addEventListener("DOMContentLoaded", function () {
+            // Seleciona todas as mensagens com a classe 'msg'
+            const messages = document.querySelectorAll(".msg");
+
+            // Função para esconder as mensagens após 30 segundos
+            function hideMessages() {
+                messages.forEach(message => {
+                    // Define o tempo de 30 segundos (30000 milissegundos)
+                    const timeout = 13000;
+                    // Aguarda o tempo definido e, em seguida, remove a classe para esconder a mensagem
+                    setTimeout(() => {
+                        message.style.display = "none";
+                    }, timeout);
+                });
+            }
+
+            // Chama a função para esconder as mensagens após o carregamento da página
+            hideMessages();
+        });
+
+    </script>
+
+
+</body>
+
+</html>
