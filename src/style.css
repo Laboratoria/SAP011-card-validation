@@ -1,0 +1,190 @@
+body {
+    background-image: url(./novo.png);   
+    background-size: 100%;
+}
+#titulo{
+    color: #f0f8ff;
+}   
+#corpo {
+    color: rgb(237, 15, 182);       
+    height: 80vh; /* Define a altura do corpo para ocupar toda a altura da janela */
+    display: flex;
+    align-items: center;
+  font-style: oblique;
+ border-end-start-radius: 1000px;
+ border-top-left-radius: 100px;   
+ width: 120vh;
+    height: 350px;
+    background-color: rgba(85, 80, 80, 0.124);/* Define o contêiner como um flex container */
+    color: rgb(237, 15, 182); 
+    flex-direction: column;
+    size-adjust: 1000vh;
+    font-size:large;
+}
+
+  label{
+   color: rgb(237, 15, 182); 
+   display:flex;
+   justify-content:baseline;
+   font-size:medium 
+  }
+ 
+#botaov{
+    background-color: rgb(237, 15, 182);/* Cor de fundo do botão */
+    color:rgb(13, 12, 0); /* Cor do texto do botão */
+    padding: 8px 20px; /* Espaçamento interno do botão */
+    border: none; /* Remover borda do botão */
+    border-radius: 5px; /* Arredondar cantos do botão */
+    cursor:pointer; /* Alterar cursor para indicar que é clicável */
+    margin-top: 5px;
+   
+
+}
+#modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 9999;
+  }
+  
+  #modal-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+  }
+  
+  @keyframes zoomIn {
+    from {
+      transform: scale(0);
+    }
+    to {
+      transform: scale(1);
+    }
+  }
+  
+  /* Define a imagem de fundo para o corpo do documento */
+body {
+  background-image: url(./novo.png);
+  background-size: 100%;
+}
+
+/* Estiliza o título principal com cor azul claro */
+#titulo {
+  color: #f0f8ff;
+}
+
+/* Estiliza o contêiner principal da página */
+#corpo {
+  color: rgb(237, 15, 182); /* Define a cor do texto como um tom de rosa */
+  height: 80vh; /* Define a altura do contêiner para ocupar 80% da altura da janela */
+  display: flex; /* Define os elementos filhos como flex itens */
+  align-items: center; /* Centraliza os elementos filhos verticalmente */
+  font-style: oblique; /* Define o estilo da fonte como itálico */
+  border-end-start-radius: 1000px; /* Define o raio de curvatura para o canto superior direito */
+  border-top-left-radius: 100px; /* Define o raio de curvatura para o canto inferior esquerdo */
+  width: 120vh; /* Define a largura do contêiner para 120% da altura da janela */
+  height: 350px; /* Define a altura do contêiner como 350 pixels */
+  background-color: rgba(85, 80, 80, 0.124); /* Define a cor de fundo com transparência */
+  color: rgb(237, 15, 182); /* Define a cor do texto como um tom de rosa */
+  flex-direction: column; /* Define a direção de layout dos elementos filhos como coluna */
+  size-adjust: 1000vh; /* Ajusta o tamanho do texto com base na altura da janela */
+  font-size: large; /* Define o tamanho da fonte como grande */
+}
+
+/* Estiliza as etiquetas de rótulos */
+label {
+  color: rgb(237, 15, 182); /* Define a cor do texto como um tom de rosa */
+  display: flex; /* Define os elementos filhos como flex itens */
+  justify-content: baseline; /* Alinha os elementos filhos na linha de base horizontal */
+  font-size: medium; /* Define o tamanho da fonte como médio */
+}
+
+/* Estiliza o botão de Verificar */
+#botaov {
+  background-color: rgb(237, 15, 182); /* Define a cor de fundo como um tom de rosa */
+  color: rgb(13, 12, 0); /* Define a cor do texto como preto */
+  padding: 8px 20px; /* Define o espaçamento interno do botão */
+  border: none; /* Remove a borda do botão */
+  border-radius: 5px; /* Define o raio de curvatura dos cantos do botão */
+  cursor: pointer; /* Altera o cursor do mouse para indicar que o botão é clicável */
+  margin-top: 5px; /* Define a margem superior do botão */
+}
+
+/* Estiliza o modal de resultados */
+#modal {
+  display: none; /* Inicialmente oculta o modal */
+  position: fixed; /* Define a posição fixa do modal em relação à janela */
+  top: 0; /* Alinha o topo do modal com o topo da janela */
+  left: 0; /* Alinha a esquerda do modal com a esquerda da janela */
+  width: 100%; /* Define a largura do modal como 100% da janela */
+  height: 100%; /* Define a altura do modal como 100% da janela */
+  background-color: rgba(0, 0, 0, 0.5); /* Define a cor de fundo com transparência */
+  z-index: 9999; /* Define a ordem de empilhamento para garantir que o modal esteja acima de outros elementos */
+}
+
+/* Estiliza o conteúdo do modal */
+#modal-content {
+  position: absolute; /* Define a posição absoluta do conteúdo do modal em relação ao modal */
+  top: 50%; /* Alinha o topo do conteúdo com o meio vertical do modal */
+  left: 50%; /* Alinha a esquerda do conteúdo com o meio horizontal do modal */
+  transform: translate(-50%, -50%); /* Move o conteúdo do modal para o centro */
+  background-color: #fff; /* Define a cor de fundo do conteúdo como branco */
+  border-radius: 8px; /* Define o raio de curvatura dos cantos do conteúdo */
+  padding: 20px; /* Define o espaçamento interno do conteúdo */
+}
+
+/* Animação para a entrada do modal */
+@keyframes zoomIn {
+  from {
+      transform: scale(0); /* Começa com escala 0 (invisível) */
+  }
+  to {
+      transform: scale(1); /* Termina com escala 1 (tamanho normal) */
+  }
+}
+
+/* Animação para a saída do modal */
+@keyframes zoomOut {
+  from {
+      transform: scale(1); /* Começa com escala 1 (tamanho normal) */
+  }
+  to {
+      transform: scale(0); /* Termina com escala 0 (invisível) */
+  }
+}
+
+/* Estiliza o resultado exibido no modal */
+#resultado {
+  text-align: center; /* Centraliza o texto horizontalmente */
+  font-size: 18px; /* Define o tamanho da fonte como 18 pixels */
+  margin-top: 20ona   px; /* Espaço entre o resultado e o botão Fechar - Observação: há um erro de digitação, deveria ser "20px" */
+}
+
+/* Estiliza o botão Fechar do modal */
+#fecharModal {
+  background-color: #ccc; /* Define a cor de fundo do botão Fechar como cinza */
+  color: #fff; /* Define a cor do texto do botão Fechar como branco */
+  padding: 8px 16px; /* Define o espaçamento interno do botão Fechar */
+  border: none; /* Remove a borda do botão Fechar */
+  border-radius: 5px; /* Define o raio de curvatura dos cantos do botão Fechar */
+  cursor: pointer; /* Altera o cursor do mouse para indicar que o botão é clicável */
+  margin-top: 10px; /* Define a margem superior do botão Fechar */
+}
+
+/* Estiliza o botão Fechar do modal quando hover (quando o cursor do mouse está sobre o botão) */
+#fecharModal:hover {
+  background-color: #999; /* Define a cor de fundo do botão Fechar como cinza escuro */
+}
+
+ 
+
+
+  

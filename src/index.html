@@ -1,14 +1,82 @@
 <!DOCTYPE html>
+<!-- Declaração do tipo de documento como HTML5 -->
+
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Tarjeta de crédito válida</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <header></header>
-    <main></main>
-    <footer></footer>
-    <script src="index.js" type="module"></script>
-  </body>
-</html>
+<!-- Início do documento HTML -->
+
+<head>
+  <!-- Cabeçalho do documento -->
+
+  <!-- Definição da codificação de caracteres para UTF-8 -->
+  <meta charset="utf-8">
+
+  <!-- Título da página -->
+  <title>Data Validation</title>
+
+  <!-- Importação do arquivo CSS para estilizar a página -->
+  <link rel="stylesheet" type="text/css" href="style.css">
+
+  <!-- Importação do arquivo JavaScript index.js -->
+  <script src="./index.js" type="module"></script>
+  <!-- O arquivo index.js é importado como um módulo JavaScript -->
+</head>
+
+<body>
+  <!-- Corpo do documento HTML -->
+
+  <div class="container"></div>
+  <!-- Div vazia com a classe "container" -->
+
+  <header>
+    <!-- Cabeçalho da página -->
+
+    <!-- Título principal da página com um ícone -->
+    <h1 id="titulo"> <i class="fa-solid fa-code" style="color: #6db5e7;"></i> Data Validation</h1>
+    <!-- O ícone é um elemento de uma biblioteca de ícones chamada "fa-solid" e possui uma cor específica -->
+  </header>
+
+  <main id="corpo">
+    <!-- Corpo principal da página -->
+
+    <!-- Descrição da ferramenta -->
+    <p>Ferramenta criada com objetivo de validar dados encontrados em vazamentos durante o Hunting. Com a finalidade de
+      evitar falsos positivos e chamados dispensáveis. Nossa aplicação já auxilia times de Anti-fraude/Theat
+      intelligence de muitas empresas.</p>
+
+    <!-- Campos para inserir o número do cartão, código de segurança e nome do titular -->
+    <section id="quadrado">
+      <label>N°</label>
+      <!-- Rótulo para o campo de entrada de número do cartão -->
+      <input type="text" name="number" maxlength="16"> <br>
+      <!-- Campo de entrada para o número do cartão -->
+      <label>CÓD. SEGURANÇA:</label>
+      <!-- Rótulo para o campo de entrada de código de segurança -->
+      <input type="text" name="cod" maxlength="3"> <br>
+      <!-- Campo de entrada para o código de segurança -->
+      <label>NOME:</label>
+      <!-- Rótulo para o campo de entrada do nome do titular -->
+      <input type="text" name="NOME"> <br>
+      <!-- Campo de entrada para o nome do titular -->
+    </section>
+
+    <!-- Botão "Verificar" para iniciar a verificação -->
+    <button id="botaov" class="botao">Verificar</button>
+    <!-- Botão com o ID "botaov" e a classe "botao" -->
+
+    <!-- Modal para exibir o resultado da verificação -->
+    <div id="modal">
+      <!-- Div com o ID "modal" para o modal -->
+      <div id="modal-content">
+        <!-- Div com o ID "modal-content" para o conteúdo do modal -->
+        <!-- Div para exibir o resultado -->
+        <div id="resultado"></div>
+        <!-- Botão "Fechar" para fechar o modal -->
+        <button id="fecharModal">Fechar</button>
+      </div>
+    </div>
+  </main>
+  
+  <!-- Rodapé da página -->
+  <footer></footer>
+</body>
+</html>;
