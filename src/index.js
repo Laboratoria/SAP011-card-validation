@@ -12,11 +12,21 @@ submit.addEventListener('click', function (e) {
         <h2>Cartao validado com sucesso!</h2>
         <br>
     </header>
-    <!-- Criar um cartao aqui com os 4U numeros visivel e talvez a bandeira aqui(se der tempo) -->
+        <h3>Pode fazer seuas compras despreocupado(a).</h3>
         <br>
-        <input type="submit" id="btn-submit" value="Validar novamente">`
-
-    
+        <p>O numero de cartao informado passou pelo Validador ✔ </p>
+        <br>
+        <p>Deixe sua avaliacao e feedback para a "equipe"!</p>
+        <p>Adoraria saber como foi sua experiencia conosco.😊</p>
+        <br>
+        <p>E com a sua avaliaçao que procuramos melhorar para melhor atende-lo!👍</p>
+        <br>
+        <p>A sua segurançao e de seus dados sao nossa prioridade em caso de duvida entre em contato no perfil localizado no roda pe da pagina.🔒</p>
+        <br>
+        <br>
+        <input type="submit" id="btn-submit" value="Validar novamente">
+        <br>
+       `
   } else {
 
     alert("Por gentileza, verifique o numero informado e tente novamente.");
