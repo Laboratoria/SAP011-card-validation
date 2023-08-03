@@ -12,7 +12,7 @@ submit.addEventListener('click', function (e) {
         <h2>Cartao validado com sucesso!</h2>
         <br>
     </header>
-        <h3>Pode fazer seuas compras despreocupado(a).</h3>
+        <h3>Pode fazer suas compras despreocupado(a).</h3>
         <br>
         <p>O numero de cartao informado passou pelo Validador ✔ </p>
         <br>
