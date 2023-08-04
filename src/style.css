@@ -25,7 +25,7 @@ a {
 
 body {
     padding-top: 10vh;  /* view height -> 5% da tela */
-    background-image: url('../img/bg-register-page1.jpg');
+    background-image: url('./img/bg-register-page1.jpg');
     background-position-y: 0px;
     height: 0%;
     margin: 0;
