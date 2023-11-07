@@ -1,0 +1,124 @@
+negado.html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cartão negado</title>
+    <link rel="stylesheet" href="negado.css">
+    <script src="negado.js"></script>
+</head>
+<body>
+    <div id="video-container">
+        <video id="background-video" src="moon.mp4" autoplay controls></video>
+        <div id="text-container">
+            <p id="text"></p>
+        </div>
+    </div>
+</body>
+</html>
+
+
+negado.css
+
+body {
+    margin: 0;
+    overflow: hidden;
+}
+
+#video-container {
+    position: relative;
+}
+
+#background-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+#text-container {
+    position: fixed; 
+    top: 50%; /* Centraliza verticalmente */
+    left: 50%; /* Centraliza horizontalmente */
+    transform: translate(-50%, -50%); /* Centraliza o centro do elemento */
+    text-align: center;
+    color: antiquewhite;
+    font-size: 24px;
+    font-family: 'Courier New', Courier, monospace;
+    width: 80%;
+    z-index: 1; /* Frases acima do vídeo */
+}
+
+#text {
+    opacity: 0;
+    animation: fade-in 2s ease-in-out;
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+
+negado.js
+
+// ...
+
+document.addEventListener('DOMContentLoaded', function() {
+    showPhraseSequentially();
+});
+const textContainer = document.getElementById('text');
+const phrases = [
+    "-Seu cartão foi negado.",
+    "É, vamos precisar te levar de volta para a terra.",
+    "Porém você não poderá pagar essa passagem pelo visto né",
+    "Bem, verei com o meu comandante o que podemos fazer..."
+];
+
+let currentPhraseIndex = 0;
+
+function showPhraseSequentially(){
+    let textContainer = document.getElementById('text'); // Mova esta linha para dentro da função.
+
+    if (currentPhraseIndex >= phrases.length){
+        return;
+    }
+
+    textContainer.textContent = phrases[currentPhraseIndex];
+    currentPhraseIndex++;
+
+    setTimeout(showPhraseSequentially, 3000);
+}
+
+const videoContainer = document.getElementById('video-container');
+const videoPath = 'moon.mp4'; // Caminho para o vídeo
+
+const video = document.createElement('video');
+video.autoplay = true;
+video.muted = false; // Altere para "false" para iniciar o vídeo com som.
+
+// Verifica se o vídeo pode ser carregado corretamente
+video.oncanplay = () => {
+    if (!videoStarted) {
+        showPhraseIndex();
+        videoStarted = true;
+    }
+};
+
+// Trata erros de carregamento do vídeo
+video.onerror = () => {
+    console.error('Erro ao carregar o vídeo.');
+};
+
+video.src = videoPath;
+
+videoContainer.appendChild(video);
